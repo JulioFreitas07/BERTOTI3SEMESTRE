@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>crud operation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="readAll()">
+    <div class="container">
+        <div class="form_container">
+            <div class="header">
+                <h1>Cinema Ao Ar Livre</h1>
+            </div>
+            <form class="create_form">
+                <input type="text" class="name" placeholder="Placa"/>
+                <input type="text" class="year" placeholder="Pessoas no Carro"/>
+                <input type="text" class="color" placeholder="Pipocas Compradas"/>
+                <button type="button" onclick="add()">Create</button>
+            </form>
+            <form class="update_form">
+                <input type="text" hidden class="uid"/>
+                <input type="text" class="uname"/>
+                <input type="text" class="uyear"/>
+                <input type="text" class="ucolor"/>
+                <button type="button" onclick="update()">Atualizar</button>
+            </form>
+            <div class="add_div">
+                <button onclick="create()">Adicionar</button>
+            </div>
+            <table>
+                <thead>
+                    <th>Placa do carro</th>
+                    <th>Pessoas no Carro</th>
+                    <th>Pipocas Compradas</th>
+                </thead>
+                <tbody class="data_table"></tbody>
+            </table>
+        </div>
+
+    </div>
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+</html>

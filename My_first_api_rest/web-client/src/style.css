@@ -1,0 +1,85 @@
+body{
+    background-color: #eee57d;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    height: 80Vh;
+}
+.form_container{
+    margin-top: 30px;
+    width: 60vh;
+    height: 80vh;
+    background-color: #eee57d;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input{
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px soli #FDFFE2;
+}
+
+form button{
+    padding: 7px;
+    background-color: #000000;
+    font-size: 18px;
+    color: #ffffff;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.add_div{
+    width: 50%;
+    padding: 10px 0px 0px 90px;
+}
+
+.add_div button{
+    width: 200px;
+    padding: 6px;
+    background-color: #000000;
+    font-size: 20px;
+    color: #FDFFE2;
+    border-radius: 6px;
+}
+
+.add_div button:hover{
+    background-color: #FDFFE2;
+    cursor: pointer;
+    color: #1A2130;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+table button {
+    padding: 8px;
+    color: #FDFFE2;
+    border-radius: 7px;
+}
+.delete_button{
+    width: 100%;
+    background-color: #a84747;
+}
+.update_button{
+    width: 100%;
+    background-color: #4790a5;
+}
+
+.align_button_table{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.update_form, .create_form {
+    display: none;
+}
